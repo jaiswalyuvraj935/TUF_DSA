@@ -1,20 +1,39 @@
-In C++, both arrays and vectors are used to store collections of elements, but they differ significantly in their flexibility, memory management, and performance characteristics.
+DSA-Problem-Solver-Journey (or "Striver-DSA-Mastery")
+Description
+Welcome to my Data Structures and Algorithms repository! This collection is dedicated to solving the problems featured in the Striver’s DSA Sheet.
 
-Comparison at a GlanceFeatureArray (std::array / C-style)Vector (std::vector)SizeFixed (known at compile time)Dynamic (can grow/shrink)MemoryStack (usually)HeapPerformanceFaster (no overhead)Slightly slower (reallocation overhead)FlexibilityRigidHighOwnershipUser-managed or scope-boundHandles its own memoryArrays (std::array)An array is a fixed-size sequence of elements of the same type. In modern C++, it is recommended to use std::array (found in the <array> header) over C-style arrays (int arr[5]) because it provides a safer, object-oriented interface.Fixed Size: You must know the size at compile time.Performance: Extremely efficient as it has zero memory overhead beyond the elements themselves.Best Used When: The number of elements is constant and known ahead of time.C++#include <array>
+My goal is to document my problem-solving journey, refine my algorithmic thinking, and provide a clear, readable, and optimized set of solutions for anyone looking to master DSA. Whether you are preparing for technical interviews or simply looking to sharpen your coding skills, feel free to use these solutions as a reference.
 
-std::array<int, 5> myArr = {1, 2, 3, 4, 5};
-// myArr.size() is always 5.
+Repository Features
+Structured Solutions: Problems are organized by topic and difficulty level.
 
+Optimized Code: Solutions are written with a focus on time and space complexity, utilizing best practices in [mention your preferred language, e.g., C++ or Java].
 
-Vectors (std::vector)A vector is a dynamic array that can automatically resize itself when elements are added or removed. It is part of the Standard Template Library (STL) in the <vector> header.Dynamic Size: It manages its own memory on the heap. When the capacity is reached, it allocates a larger block of memory, copies the old elements, and deletes the old block.Convenience: Provides useful methods like 
-.push_back(), 
-.pop_back(), 
-.insert(),  
-.erase()  
+Clear Logic: Each solution is commented to explain the core approach and the intuition behind the algorithm.
 
-Best Used When: You do not know how many elements you will need at compile time, or when you need to change the size of the collection during execution.C++
+Complexity Analysis: Every file includes a brief note on the Big O notation for time and space complexity.
 
-#include <vector>
-std::vector<int> myVec;
-myVec.push_back(10); // Size becomes 1
-myVec.push_back(20); // Size becomes 2
+About the Journey
+I am actively documenting my progress as I work through these challenges. My approach follows a systematic path from foundational concepts to advanced data structures and algorithms, ensuring a strong grip on logic before moving to complex implementations.
+
+How to Use This Repo
+Browse by Folder: Navigate through the folders categorized by topic (e.g., Arrays, Linked Lists, Trees, Graphs, DP).
+
+Learn & Refine: Use these solutions to verify your logic, compare approaches, or understand different ways to optimize a problem.
+
+Contribute: Found a better approach or spotted a bug? Feel free to open a Pull Request or create an Issue. Let’s learn together!
+
+Roadmap
+[ ] Arrays & Hashing
+
+[ ] Linked Lists
+
+[ ] Stack & Queue
+
+[ ] Binary Trees & Graphs
+
+[ ] Dynamic Programming
+
+[ ] ...and more!
+
+Built with dedication to mastering DSA. Happy Coding!
