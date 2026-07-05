@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <algorithm>
 using namespace std;
 
 // method1 using set
@@ -26,6 +27,8 @@ vector<int> method1(vector<int> &arr)
 
 int method2(vector<int> &nums)
 {
+    //sort the array first
+    sort(nums.begin(), nums.end());
 
     if (nums.empty()) {
         return 0;
